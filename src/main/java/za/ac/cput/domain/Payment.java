@@ -10,7 +10,7 @@ public class Payment {
         this.paymentID = builder.paymentID;
         this.paymentMethod = builder.paymentMethod;
         this.amount = builder.amount;
-        this.status = builder.status;
+        this.status = builder.date;
     }
 
     public String getPaymentID() {
@@ -43,7 +43,7 @@ public class Payment {
         private String paymentID;
         private String paymentMethod;
         private double amount;
-        private String status;
+        private String date;
 
         public Builder setPaymentID(String paymentID) {
             this.paymentID = paymentID;
@@ -60,8 +60,8 @@ public class Payment {
             return this;
         }
 
-        public Builder setStatus(String status) {
-            this.status = status;
+        public Builder setDate(String date) {
+            this.date = date;
             return this;
         }
 
